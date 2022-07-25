@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/mediaquery.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="nav">
+        <p class="logo-text">
+          SaveLyf<ion-icon name="heart" class="logo"></ion-icon>
+        </p>
+        <ul class="nav-lists">
+          <a href="#" class="list list1">Home</a>
+          <a href="#" class="list">Feature</a>
+          <a href="#" class="list">About</a>
+          <a href="#" class="list">Contact</a>
+        </ul>
+        <div class="btn menubtn">
+          <a href="#" class="donate">Donate</a>
+        </div>
+      </nav>
+      <div class="openMenu">
+        <ion-icon name="menu"></ion-icon>
+      </div>
+      <div class="closeMenu ">
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </header>
+    <!-------------------- HERO SECTION -------------------------->
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-left">
+          <div class="hero-head">
+            <div class="text">
+              WE NEED YOUR <span id="speChar">HELP</span><br />
+              TO SAVE <span id="speChar">WALTER</span>
+            </div>
+            <div class="text2">
+              Walter was a Ex-Militiary officials and served our country more
+              than 20 years. He is suffering from blood cancer and want our
+              help.
+            </div>
+            <div class="buttons">
+              <div class="btn btn2">
+                <div>
+                  <a href="#" class="donate donatebtn2">Donate
+                </div>
+              </div>
+              <div class="btn btn3">
+                <div>
+                  <a href="#" class="donate share">share </a
+                  ><ion-icon name="share-alt" class="logo-btn share-logo"></ion-icon></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------->
+        <div class="hero-right">
+          <img class="hero-img filter" src="./img/hero-img.png" width="90%" height="auto" />
+        </div>
+      </div>
+
+      <!-- -------------------- FEATURED ------------------- -->
+      <div class="donation">
+        <div class="donors">
+          <div class="donor">
+            <h2 class="donors-text text-donor">Donor </h2>
+            <span class="span1">240</span>
+          </div>
+
+          <div class="required">
+            <h2 class="donors-text text-required">Collection </h2>
+            <span class="span2">44K $</span>
+          </div>
+          <div class="remaining">
+            <h2 class="donors-text text-remaining">Required </h2>
+            <span class="span3">24K $</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- ------------------ About Walker-JR and video ---------------------->
+      <sidebar class="featured">
+        <div class="featured-left">
+          <div class="video1">
+            <video id="myvideo"
+            width="100%" height=auto controls autoplay="true"
+            muted=false loop>
+              <source src="./video/patient-2.mp4" type="video/mp4" >
+            </video>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div class="about-walterjr">
+          <p class="about-text">Hey I'm walter jr, son of Egon Walter. My Father was most humble and passionate person. He has served our country (USA) for more than 20 years. He retired at age of 43 and after 5 years he was diagnosed with blood cancer. We lost so much money while curing the disease and now we need some help from you. If you donate atleast 1$ then it will be so much helpful for us. I want my father to live where he was strong enough to serve our country!! </p>
+          <h3 class="about-head3">Kindly donate on below link or share as much as you can</h3>
+          <div class="buttons">
+            <div class="btn btn2">
+              <div>
+                <a href="#" class="donate donatebtn2">Donate </a>
+              </div>
+            </div>
+            <div class="btn btn3">
+              <div>
+                <a href="#" class="donate share">share </a
+                ><ion-icon name="share-alt" class="logo-btn share-logo"></ion-icon></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </sidebar>
+       <!-- ------------------ Footer ---------------------->
+
+       <footer class="footer">
+        <div class="footer-left">
+          <p class="logo-text-footer">
+            SaveLyf<ion-icon name="heart" class="logo"></ion-icon>
+          </p>
+          <ul class="list-footer-home">
+            <p class="head">SaveLyf<ion-icon name="heart" class="logo"></ion-icon></p>
+            <a href="#" class="list-footer">Home</a>
+            <a href="#" class="list-footer">Feature</a>
+            <a href="#" class="list-footer">About</a>
+            <a href="#" class="list-footer">Contact</a>
+          </ul>
+          <ul class="list-footer-contact">
+            <!-- <a class="head">Contact US</a> -->
+            <div class="contact-list">
+              <div class="list-footer">
+                <p class="head">Email</p>
+                <span class="email">walkerjr1234@gmail.com</span>
+              </div>
+              <div class="list-footer">
+                <p class="head">Phone</p>
+                <span class="phone">6573924442</span>
+              </div>
+            </div>
+          </ul>
+
+        </div>
+        <div class="footer-right">
+          <p class="text2 copyright">&#169; Copyright 2022 by <a href="#" class="author">DevOps Teams</a>. All Rights Reserved.
+             </p>
+        </div>
+       </footer>
+
+    </section>
+    
+   <script src="./js/index.js"></script>
+  </body>
+</html>

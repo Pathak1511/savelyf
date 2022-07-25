@@ -1,0 +1,305 @@
+/*  small screen upto <= 640px    endpoints--> 320px */
+/*  medium size screen >=641 to <=1007px  midpoints--> 960px */
+/*  large size screen >= 1007px and above greaterpoints--> 1920*/
+
+/* For Mobile --> 320px to 480px  [20em to 30em] */
+/* For Tablets & ipad --> 481px to 768px [30em++ to 48em]*/
+/* For laptops or small screen --> 768px to 1024px [48em++ to 64em] */
+/* For Desktop or large-size Screen 1024px to 1200px [64em++ to 75em] */
+/* For extra-large Screen above 1200px [75em++] */
+
+:root {
+  --toggle-color: #ddd;
+  /*===== transition color ======*/
+  --trans-02: all 0.5s ease-in-out;
+}
+
+@media (max-width: 88em) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media (max-width: 83em) {
+  html {
+    font-size: 38%;
+  }
+  .donors-text,
+  .span1,
+  .span2,
+  .span3 {
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+@media (max-width: 80em) {
+  html {
+    font-size: 36%;
+  }
+  .hero-right,
+  .featured-left {
+    padding: 8rem 6rem;
+  }
+  .footer {
+    height: 160px;
+  }
+}
+
+@media (max-width: 74em) {
+  html {
+    font-size: 34%;
+  }
+  .donor,
+  .required,
+  .remaining {
+    gap: 2.8rem;
+  }
+  .buttons {
+    gap: 3.2rem;
+  }
+  .btn2,
+  .btn {
+    align-items: center;
+  }
+  .footer {
+    height: 140px;
+  }
+}
+
+@media (max-width: 65em) {
+  html {
+    font-size: 32.5%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 30%;
+  }
+  .nav {
+    width: 60%;
+  }
+  .nav-lists {
+    font-size: 3.4rem;
+    position: absolute;
+    justify-content: center;
+    z-index: 3000;
+    flex-direction: column;
+    top: 9.8rem;
+    left: 0rem;
+    background-color: #cdd2def2;
+    width: 100%;
+    height: 90vh;
+    transform: translateY(-50%);
+    transition: var(--trans-02);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .openMenu {
+    display: inline-block;
+  }
+  .closeMenu {
+    display: none;
+  }
+  .select {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 53em) {
+  .hero {
+    padding: 6.8rem 3.6rem 3.6rem 3.6rem;
+  }
+  .hero-right,
+  .featured-left {
+    padding: 6.4rem 4.4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 38%;
+  }
+  .navbar {
+    padding: 1.8rem 6rem;
+  }
+  .menubtn {
+    display: none;
+  }
+  .donate {
+    font-size: 2.4rem;
+  }
+
+  .openMenu,
+  .closeMenu {
+    font-size: 3.8rem;
+  }
+  .hero-main,
+  .featured {
+    flex-direction: column;
+  }
+  .hero-right,
+  .hero-left,
+  .featured-left,
+  .featured-right {
+    margin: 0rem;
+    padding: 6.4rem 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .featured-right {
+    padding: 8.6rem 6.4rem;
+  }
+  .hero-head {
+    align-items: center;
+  }
+  .hero-img {
+    width: 64%;
+  }
+  .donors-text,
+  .span1,
+  .span2,
+  .span3 {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+  .footer-left {
+    width: 70%;
+    gap: 3.4rem;
+  }
+}
+
+@media (max-width: 42em) {
+  html {
+    font-size: 36%;
+  }
+  .hero-img {
+    width: 76%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .donors {
+    gap: 2rem;
+  }
+  .hero {
+    padding: 6rem 2rem;
+  }
+  .donation {
+    padding: 6.4rem 2.4rem;
+  }
+}
+
+@media (max-width: 32em) {
+  html {
+    font-size: 38%;
+  }
+  .hero {
+    padding: 0rem;
+  }
+  .footer {
+    height: auto;
+    align-items: center;
+  }
+  .logo-text-footer {
+    font-size: 4rem;
+  }
+  .footer-left {
+    flex-direction: column;
+    gap: 3.4rem;
+  }
+  .head {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .list-footer {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 30em) {
+  body {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+  }
+  .text {
+    font-size: 4rem;
+  }
+  .text2 {
+    width: 80%;
+  }
+  .donation {
+    padding: 4.4rem 6.4rem;
+  }
+  .hero-img {
+    width: 90%;
+  }
+  .donors {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .donor,
+  .required,
+  .remaining {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .span1,
+  .span2,
+  .span3 {
+    border: none;
+    text-align: left;
+  }
+}
+
+@media (max-width: 23em) and (min-width: 16em) {
+  body {
+    padding: 0.4rem;
+  }
+  html {
+    font-size: 32%;
+  }
+  .about-text {
+    font-size: 2.6rem;
+  }
+  .text2 {
+    width: 80%;
+    font-size: 2.6rem;
+  }
+  .donors-text {
+    padding: 1.4rem 2.4rem;
+  }
+  .span1,
+  .span2,
+  .span3 {
+    font-size: 2.4rem;
+  }
+  .head {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .list-footer {
+    font-size: 1.8rem;
+  }
+  /* .donor,
+  .required,
+  .remaining {
+    width: 70%;
+  } */
+}
