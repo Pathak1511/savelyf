@@ -313,10 +313,6 @@ a {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-/* .video1 {
-  filter: brightness(100%) contrast(110%);
-} */
-
 .featured-left,
 .featured-right {
   width: 50%;
@@ -419,4 +415,266 @@ a {
 
 .author {
   color: var(--button);
+}
+
+/* ********************** SLIDER ****************/
+
+.slider {
+  margin-top: 0.4rem;
+  padding: 8rem 2rem;
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+.tagName {
+  display: flex;
+  padding: 0rem 6.4rem;
+}
+.prev,
+.next {
+  cursor: pointer;
+  padding: 2rem;
+  color: var(--button);
+  font-weight: bold;
+  font-size: 2.4rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.backGround {
+  background-color: var(--body03);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: var(--body03);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--body03);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ********************** ABOUT ****************/
+.section-container {
+  width: 100%;
+}
+.container,
+.contact {
+  width: 80%;
+  display: block;
+  margin: 2rem auto;
+  padding: 4rem 0rem;
+}
+.tittle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.tittle h1 {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  color: var(--button);
+}
+.content {
+  float: left;
+  width: 90%;
+}
+.image-section {
+  float: right;
+  width: 40%;
+}
+.image-section img {
+  width: 80%;
+  height: auto;
+  float: right;
+}
+
+.logo-contact {
+  color: var(--button);
+  margin-bottom: 2.8rem;
+}
+.button {
+  margin-top: 3.2rem;
+}
+.btn-contact a {
+  text-decoration: none;
+  background-color: var(--button);
+  font-weight: 500;
+  color: var(--body03);
+}
+.button a:hover {
+  color: #fff;
+  background-color: #d9181f;
+  transition: 1s ease;
+}
+.social {
+  width: 100%;
+  clear: both;
+  margin-top: 3.2rem;
+  text-align: center;
+}
+.social i {
+  color: var(--text1);
+  font-size: 22px;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  line-height: 2.8rem;
+  text-align: center;
+  background-color: var(--body03);
+  margin: 0rem 0.8rem;
+}
+.social i:hover {
+  color: #222;
+  background-color: var(--button);
+  transition: 1s ease;
+  transform: rotate(360deg);
+}
+
+/******************* CONTACT   ***********************/
+.contact,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  width: 80%;
+}
+.content h1 {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: var(--button);
+}
+
+.text4 {
+  color: var(--button);
+  font-weight: 400;
+}
+.contact-text {
+  width: 100%;
+}
+.container-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  padding: 1.2rem 0;
+  display: flex;
+  gap: 2.4rem;
+}
+.icon {
+  min-width: 6.4rem;
+  height: 6.4rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.text2 h3 {
+  font-weight: 400;
+  color: var(--button);
+}
+.contactForm {
+  width: 40%;
+  padding: 4.4rem;
+  background: #fff;
+}
+.contactForm h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 2rem;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  resize: none;
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.inputBox input[type="submit"] {
+  width: 100px;
+  color: var(--body03);
+  background-color: var(--button);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 1.2rem;
+  transition: ease-in 0.4s;
+}
+
+.inputBox input[type="submit"]:hover {
+  background: #06535e;
 }
