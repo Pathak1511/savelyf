@@ -59,22 +59,41 @@ a {
   color: var(--button);
   display: none;
 }
+
+/******************* COMMON PROPERTIES ***************/
+
+.nav-lists,
+.navbar,
+.nav,
+.hero-left,
+.hero-right,
+.donors,
+.footer-left,
+.footer-right,
+.donor,
+.required,
+.remaining,
+.featured-left,
+.featured-right,
+.contact,
+.content,
+.container-contact,
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*********************** MAIN BODY ************************/
 
 .navbar {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1.8rem 4.4rem;
   background-color: var(--body02);
   position: sticky;
 }
 .nav {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .logo-text {
   font-size: 4rem;
@@ -87,10 +106,7 @@ a {
 }
 
 .nav-lists {
-  display: flex;
   list-style: none;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.8rem;
   gap: 3.2rem;
 }
@@ -158,9 +174,7 @@ a {
 .hero-right {
   width: 50%;
   margin: 8.4rem 6.4rem;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .hero-right {
   background-color: var(--body03);
@@ -259,18 +273,14 @@ a {
 }
 
 .donors {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 4rem;
 }
 
 .donor,
 .required,
 .remaining {
-  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1.4rem;
 }
 
@@ -316,9 +326,7 @@ a {
 .featured-left,
 .featured-right {
   width: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   align-content: stretch;
   gap: 2rem;
   padding: 8.4rem 6.4rem;
@@ -356,8 +364,6 @@ a {
 .footer-left,
 .footer-right {
   width: 50%;
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   margin: auto 6.4rem;
   padding: 2rem;
@@ -422,6 +428,7 @@ a {
 .slider {
   margin-top: 0.4rem;
   padding: 8rem 2rem;
+  background-color: var(--body03);
 }
 .slider-container {
   display: flex;
@@ -444,7 +451,7 @@ a {
 }
 
 .backGround {
-  background-color: var(--body03);
+  background-color: var(--body);
 }
 .next {
   right: 0;
@@ -452,7 +459,7 @@ a {
 }
 .prev:hover,
 .next:hover {
-  background-color: var(--body03);
+  background-color: var(--body);
 }
 
 .dot {
@@ -460,20 +467,19 @@ a {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: var(--body03);
+  background-color: var(--body);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color: var(--button);
 }
 
-.active,
-.dot:hover {
+/* .dot:hover {
   background-color: #717171;
-}
+} */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -497,11 +503,11 @@ a {
   width: 80%;
   display: block;
   margin: 2rem auto;
-  padding: 4rem 0rem;
+  padding: 6.4rem 0rem 0rem 0rem;
 }
 .tittle {
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 3.2rem;
 }
 .tittle h1 {
@@ -575,9 +581,7 @@ a {
 /******************* CONTACT   ***********************/
 .contact,
 .content {
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .content {
@@ -599,9 +603,7 @@ a {
 }
 .container-contact {
   width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 1.8rem;
 }
 .contactInfo {
@@ -618,9 +620,7 @@ a {
   min-width: 6.4rem;
   height: 6.4rem;
   background: #fff;
-  display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 50%;
   font-size: 2rem;
 }
