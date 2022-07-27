@@ -585,7 +585,7 @@ a {
   flex-direction: column;
 }
 .content {
-  width: 80%;
+  width: 100%;
 }
 .content h1 {
   text-transform: uppercase;
@@ -599,7 +599,7 @@ a {
   font-weight: 400;
 }
 .contact-text {
-  width: 100%;
+  width: 60%;
 }
 .container-contact {
   width: 100%;
