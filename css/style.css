@@ -8,6 +8,12 @@
 
 html--> fontsize--> 0.625%; */
 
+/* for dark mode 
+/* body : #0d1117
+/* body2: #21262d
+/* header : #161b22
+/* text2 : #bdd1d9
+/* logo and nav : #ffffff
 /*==============  GLOBAL DESIGN HERE!============================*/
 * {
   padding: 0;
@@ -19,11 +25,14 @@ html--> fontsize--> 0.625%; */
   --body: #e4e9f7;
   --body02: #e9eef2;
   --body03: #cdd2de;
-  --sidebar: #78a6c8;
+  --sidebar: #cdd2ded2;
   --button: #326789;
   --button2: #e65c4f;
   --text1: #222;
   --text2: #e9eef2;
+  --text3: #f8f8f8;
+  --fontColor1: #222;
+  --fontColor2: #333;
 
   --trans-01: all 0.3s ease-in-out;
   --trans-02: all 0.4s ease-in;
@@ -41,7 +50,7 @@ html {
 body {
   width: 96%;
   margin: 1rem auto;
-  background-color: var(--button);
+  background-color: #67696f;
   overflow-x: hidden;
   font-family: "Outfit", sans-serif;
 }
@@ -58,6 +67,16 @@ a {
   font-weight: 600;
   color: var(--button);
   display: none;
+}
+
+.hidden {
+  display: none;
+}
+.dark {
+  color: var(--button);
+}
+.light {
+  color: #f7f7f7;
 }
 
 /******************* COMMON PROPERTIES ***************/
@@ -78,7 +97,8 @@ a {
 .contact,
 .content,
 .container-contact,
-.icon {
+.icon,
+.sidebtn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,6 +114,23 @@ a {
 }
 .nav {
   width: 100%;
+}
+.sidebtn {
+  gap: 2.8rem;
+  justify-content: center;
+}
+.dark_mode {
+  font-size: 2.8rem;
+  text-align: end;
+  transition: var(--trans-01);
+}
+.dark:hover {
+  color: var(--button);
+  cursor: pointer;
+}
+.light:hover {
+  color: #f6f6f6;
+  cursor: pointer;
 }
 .logo-text {
   font-size: 4rem;
@@ -300,7 +337,7 @@ a {
   background-color: var(--body03);
 }
 .text-remaining {
-  background-color: var(--button);
+  background-color: var(--sidebar);
   color: var(--body);
 }
 
@@ -622,7 +659,7 @@ a {
   background: #fff;
   justify-content: center;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .text2 h3 {
@@ -659,7 +696,7 @@ a {
   position: absolute;
   left: 0;
   padding: 5px 0;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
@@ -688,4 +725,47 @@ a {
 
 .inputBox input[type="submit"]:hover {
   background: #06535e;
+}
+
+/******************* DARK MODE ****************/
+
+.logo-text,
+.text,
+.prev,
+.next,
+.content_h1,
+.logo-contact,
+.copyright,
+.logo-text-footer,
+.about-head3 {
+  color: var(--fontColor1);
+}
+
+.list,
+.btn3,
+.text2,
+.span1,
+.span2,
+.span3,
+.donors-text,
+.email,
+.phone,
+.about-text,
+.contact-text .text3,
+.list-footer,
+.openMenu,
+.closeMenu,
+.share {
+  color: var(--fontColor2);
+}
+.author,
+.head {
+  color: var(--button);
+}
+
+.donatebtn2,
+.donate_read,
+.donate_send {
+  font-weight: 500;
+  color: var(--text3);
 }

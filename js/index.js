@@ -1,5 +1,5 @@
-const btnMenu = document.querySelector(".openMenu");
-const btnCloseMenu = document.querySelector(".closeMenu");
+let btnMenu = document.querySelector(".openMenu");
+let btnCloseMenu = document.querySelector(".closeMenu");
 const navBar = document.querySelector(".nav-lists");
 const mainImg = document.querySelector(".hero-img");
 const opacity = document.querySelector(".share-logo");
@@ -28,8 +28,8 @@ btnCloseMenu.addEventListener("click", function () {
 });
 
 ///////////////////////
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+let prevBtn = document.querySelector(".prev");
+let nextBtn = document.querySelector(".next");
 prevBtn.addEventListener("click", function () {
   prevBtn.classList.add("backGround");
   nextBtn.classList.remove("backGround");
@@ -45,4 +45,36 @@ nextBtn.addEventListener("click", function () {
   contactus.style.display = "block";
   dots_1.classList.remove("active");
   dots_2.classList.add("active");
+});
+
+// DARK MODE SETUP
+const darkbtn = document.querySelector(".dark");
+const lightbtn = document.querySelector(".light");
+
+let logo = document.querySelectorAll(".logo-text");
+
+darkbtn.addEventListener("click", function () {
+  darkbtn.classList.add("hidden");
+  lightbtn.classList.remove("hidden");
+  document.documentElement.style.setProperty("--body", "#21262d");
+  document.documentElement.style.setProperty("--body02", "#2f3030");
+  document.documentElement.style.setProperty("--body03", "#161b22");
+  document.documentElement.style.setProperty("--fontColor1", "#f9f9f9");
+  document.documentElement.style.setProperty("--fontColor2", "#f0f0f0");
+  document.documentElement.style.setProperty("--sidebar", "#21262d");
+  document.documentElement.style.setProperty("--button", "#58a6ff");
+  document.documentElement.style.setProperty("--text3", "#222");
+});
+
+lightbtn.addEventListener("click", function () {
+  darkbtn.classList.remove("hidden");
+  lightbtn.classList.add("hidden");
+  document.documentElement.style.removeProperty("--body", "#21262d");
+  document.documentElement.style.removeProperty("--body02", "#2f3030");
+  document.documentElement.style.removeProperty("--body03", "#161b22");
+  document.documentElement.style.removeProperty("--fontColor1", "#f9f9f9");
+  document.documentElement.style.removeProperty("--fontColor2", "#f0f0f0");
+  document.documentElement.style.removeProperty("--sidebar", "#21262d");
+  document.documentElement.style.removeProperty("--button", "#58a6ff");
+  document.documentElement.style.removeProperty("--text3", "#222");
 });
