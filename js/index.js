@@ -56,25 +56,29 @@ let logo = document.querySelectorAll(".logo-text");
 darkbtn.addEventListener("click", function () {
   darkbtn.classList.add("hidden");
   lightbtn.classList.remove("hidden");
-  document.documentElement.style.setProperty("--body", "#21262d");
+  document.documentElement.style.setProperty("--body", "#000");
+  //#21262d
   document.documentElement.style.setProperty("--body02", "#2f3030");
-  document.documentElement.style.setProperty("--body03", "#161b22");
+  //#2f3030
+  document.documentElement.style.setProperty("--body03", "#090e10");
+  //#161b22
   document.documentElement.style.setProperty("--fontColor1", "#f9f9f9");
   document.documentElement.style.setProperty("--fontColor2", "#f0f0f0");
-  document.documentElement.style.setProperty("--sidebar", "#21262d");
-  document.documentElement.style.setProperty("--button", "#58a6ff");
-  document.documentElement.style.setProperty("--text3", "#222");
+  document.documentElement.style.setProperty("--sidebar", "#1f262ad1");
+  //#21262d
+  document.documentElement.style.setProperty("--button", "#135d8e");
+  document.documentElement.style.setProperty("--text3", "#f8f8f8");
 });
 
 lightbtn.addEventListener("click", function () {
   darkbtn.classList.remove("hidden");
   lightbtn.classList.add("hidden");
-  document.documentElement.style.removeProperty("--body", "#21262d");
+  document.documentElement.style.removeProperty("--body", "#000");
   document.documentElement.style.removeProperty("--body02", "#2f3030");
-  document.documentElement.style.removeProperty("--body03", "#161b22");
+  document.documentElement.style.removeProperty("--body03", "#090e10");
   document.documentElement.style.removeProperty("--fontColor1", "#f9f9f9");
   document.documentElement.style.removeProperty("--fontColor2", "#f0f0f0");
-  document.documentElement.style.removeProperty("--sidebar", "#21262d");
-  document.documentElement.style.removeProperty("--button", "#58a6ff");
-  document.documentElement.style.removeProperty("--text3", "#222");
+  document.documentElement.style.removeProperty("--sidebar", "#1f262ad1");
+  document.documentElement.style.removeProperty("--button", "#135d8e");
+  document.documentElement.style.removeProperty("--text3", "#f8f8f8");
 });
