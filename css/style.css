@@ -108,7 +108,7 @@ a {
 
 .navbar {
   width: 100%;
-  padding: 1.8rem 4.4rem;
+  padding: 1rem 4rem;
   background-color: var(--body02);
   position: sticky;
 }
@@ -116,11 +116,11 @@ a {
   width: 100%;
 }
 .sidebtn {
-  gap: 2.8rem;
+  gap: 2rem;
   justify-content: center;
 }
 .dark_mode {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: end;
   transition: var(--trans-01);
 }
@@ -133,7 +133,7 @@ a {
   cursor: pointer;
 }
 .logo-text {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
 }
 
@@ -144,14 +144,14 @@ a {
 
 .nav-lists {
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   gap: 3.2rem;
 }
 .list,
 .list-footer {
   text-decoration: none;
   color: var(--text1);
-  padding-left: 2rem;
+  padding-left: 1.6rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -176,10 +176,10 @@ a {
 }
 
 .btn {
-  width: 20rem;
+  width: 10rem;
   background-color: var(--button);
-  border-radius: 2rem;
-  padding: 1.4rem 2.8rem;
+  border-radius: 1.6rem;
+  padding: 0.8rem 1.6rem;
 }
 .btn:hover {
   background-color: #31576f;
@@ -187,7 +187,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .donate {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--text2);
   text-decoration: none;
   text-transform: capitalize;
@@ -197,7 +197,7 @@ a {
 
 .hero {
   margin-top: 1rem;
-  padding: 8rem 4.4rem;
+  padding: 6rem 4rem;
   background-color: var(--body);
 }
 .hero-main {
@@ -210,13 +210,13 @@ a {
 .hero-left,
 .hero-right {
   width: 50%;
-  margin: 8.4rem 6.4rem;
+  margin: 6rem 4rem;
   justify-content: center;
 }
 .hero-right {
   background-color: var(--body03);
   margin: 0rem;
-  padding: 8.4rem 6.4rem;
+  padding: 7.2rem 6rem;
 }
 
 .filter {
@@ -232,40 +232,40 @@ a {
 }
 
 .text {
-  font-size: 4.6rem;
-  line-height: 4.8rem;
-  margin-bottom: 2.8rem;
-  font-weight: 700;
-  word-spacing: 0.4rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  word-spacing: 0.2rem;
 }
 
 .text,
 .text2 {
-  letter-spacing: 1.4;
-  word-spacing: 6.4;
+  letter-spacing: 1;
+  word-spacing: 6;
 }
 
 .text2 {
   width: 60%;
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 3.6rem;
 }
 #speChar {
-  font-size: 6rem;
+  font-size: 4.8rem;
   color: var(--button2);
 }
 
 .buttons {
   display: flex;
-  gap: 2.4rem;
+  gap: 2rem;
 }
 
 .btn2,
 .btn {
   display: flex;
   font-size: 1.8rem;
-  width: 20rem;
+  width: 14rem;
   justify-content: center;
   letter-spacing: 2.4;
 }
@@ -282,7 +282,7 @@ a {
   align-content: center;
 }
 .logo-btn {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .opacity {
@@ -301,11 +301,11 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 6.4rem;
+  gap: 6rem;
   background-color: var(--body02);
   color: var(--button);
-  padding: 6.4rem;
-  margin-top: 0.4rem;
+  padding: 4.8rem;
+  margin-top: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -318,15 +318,15 @@ a {
 .required,
 .remaining {
   justify-content: center;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 
 .donors-text {
   width: 50%;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 600;
-  border-radius: 2rem;
-  padding: 1.4rem 2.8rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
 }
 
 .text-donor {
@@ -344,9 +344,9 @@ a {
 .span1,
 .span2,
 .span3 {
-  font-size: 2.8rem;
-  border-radius: 2rem;
-  padding: 1.4rem 2.8rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
   border: 1px solid #31576f;
   color: #222;
 }
@@ -355,8 +355,8 @@ a {
 .featured {
   display: flex;
   background-color: var(--body03);
-  margin-top: 0.4rem;
-  padding: 2rem;
+  margin-top: 0.2rem;
+  padding: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -366,7 +366,7 @@ a {
   justify-content: center;
   align-content: stretch;
   gap: 2rem;
-  padding: 8.4rem 6.4rem;
+  padding: 7.2rem 6rem;
   /* padding: 2rem; */
 }
 .featured-right {
@@ -377,22 +377,22 @@ a {
   text-align: left;
   letter-spacing: 1.4;
   word-spacing: 6.4;
-  font-size: 2.2rem;
-  line-height: 2.6rem;
-  margin-bottom: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-head3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3rem;
 }
 
 /*************************** FOOTER *****************************/
 
 .footer {
   display: flex;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   height: 200px;
   background-color: var(--body03);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -402,17 +402,17 @@ a {
 .footer-right {
   width: 50%;
   align-items: flex-start;
-  margin: auto 6.4rem;
-  padding: 2rem;
+  margin: auto 6rem;
+  padding: 1.6rem;
 }
 
 .logo-text-footer {
-  font-size: 2.4rem;
+  font-size: 2rem;
   opacity: 0.9;
 }
 
 .head {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .list-footer-home,
@@ -436,7 +436,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   padding: 0rem;
   opacity: 0.9;
@@ -446,7 +446,7 @@ a {
 }
 .email,
 .phone {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--button);
 }
 .footer-right {
@@ -463,8 +463,8 @@ a {
 /* ********************** SLIDER ****************/
 
 .slider {
-  margin-top: 0.4rem;
-  padding: 8rem 2rem;
+  margin-top: 0.2rem;
+  padding: 7.2rem 1rem;
   background-color: var(--body03);
 }
 .slider-container {
@@ -473,15 +473,15 @@ a {
 }
 .tagName {
   display: flex;
-  padding: 0rem 6.4rem;
+  padding: 0rem 6rem;
 }
 .prev,
 .next {
   cursor: pointer;
-  padding: 2rem;
+  padding: 1.4rem;
   color: var(--button);
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -539,17 +539,17 @@ a {
 .contact {
   width: 80%;
   display: block;
-  margin: 2rem auto;
-  padding: 6.4rem 0rem 0rem 0rem;
+  margin: 1.6rem auto;
+  padding: 6rem 0rem 0rem 0rem;
 }
 .tittle {
   width: 100%;
   /* text-align: center; */
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
 }
 .tittle h1 {
   text-transform: uppercase;
-  font-size: 4.4rem;
+  font-size: 3rem;
   color: var(--button);
 }
 .content {
@@ -626,7 +626,7 @@ a {
 }
 .content h1 {
   text-transform: uppercase;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 600;
   color: var(--button);
 }
@@ -641,7 +641,7 @@ a {
 .container-contact {
   width: 100%;
   justify-content: center;
-  margin-top: 1.8rem;
+  margin-top: 1.4rem;
 }
 .contactInfo {
   width: 50%;
@@ -649,7 +649,7 @@ a {
   flex-direction: column;
 }
 .box {
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   display: flex;
   gap: 2.4rem;
 }
@@ -659,7 +659,7 @@ a {
   background: #fff;
   justify-content: center;
   border-radius: 50%;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .text2 h3 {
@@ -668,11 +668,11 @@ a {
 }
 .contactForm {
   width: 40%;
-  padding: 4.4rem;
+  padding: 4rem;
   background: #fff;
 }
 .contactForm h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #333;
   font-weight: 500;
 }
@@ -685,7 +685,7 @@ a {
 .inputBox textarea {
   width: 100%;
   padding: 10px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 10px 0;
   border: none;
   border-bottom: 1px solid #333;
@@ -696,7 +696,7 @@ a {
   position: absolute;
   left: 0;
   padding: 5px 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
