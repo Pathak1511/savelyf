@@ -120,7 +120,7 @@ a {
   justify-content: center;
 }
 .dark_mode {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   text-align: end;
   transition: var(--trans-01);
 }
