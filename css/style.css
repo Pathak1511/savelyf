@@ -414,7 +414,7 @@ a {
 }
 
 .head {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .list-footer-home,
@@ -438,17 +438,19 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  font-size: 1.4rem;
   line-height: 1.4;
   padding: 0rem;
   opacity: 0.9;
+}
+.list-footer-text {
+  font-size: 1.6rem;
 }
 .list-footer:hover {
   font-weight: 400;
 }
 .email,
 .phone {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--button);
 }
 .footer-right {
